@@ -4,7 +4,6 @@ const DefaultLayout = require('./layout/default')
 const Edit = ({tweet}) => {
     return(
         <DefaultLayout title="Edit You Tweet">
-            <h2>Edit Tweet</h2>
             <form action={`/api/tweets/${tweet._id}?_method=PUT`} method="POST">
 
                 Title: <input type="text" name="title" defaultValue={tweet.title} required/>

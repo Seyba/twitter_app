@@ -4,9 +4,9 @@ function DefaultLayout({title, children}){
         <html>
             <head>
                 <title>{title}</title>
-                <link rel="stylesheet" href="/css/app.css"/>   
+                {/* <link rel="stylesheet" href="/css/app.css"/>    */}
 
-                {/* <script src="https://cdn.tailwindcss.com"></script> */}
+                <script src="https://cdn.tailwindcss.com"></script>
             </head>
             <body className="flex flex-col items-center">
                 <h1>{title}</h1>
