@@ -1,8 +1,9 @@
 const React = require('react')
+const DefaultLayout = require('./layout/default')
 
 const Edit = ({tweet}) => {
     return(
-        <div>
+        <DefaultLayout title="Edit You Tweet">
             <h2>Edit Tweet</h2>
             <form action={`/api/tweets/${tweet._id}?_method=PUT`} method="POST">
 
@@ -14,7 +15,7 @@ const Edit = ({tweet}) => {
 
                 <input type="submit" value="Update"/>
             </form>
-        </div>
+        </DefaultLayout>
     )
 }
 

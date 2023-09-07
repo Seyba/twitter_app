@@ -1,8 +1,9 @@
 const React = require('react')
+const DefaultLayout = require('./layout/default')
 
 const New = () => {
     return(
-        <div>
+        <DefaultLayout title="Create New Tweet">
             <h2>Create a new Tweet</h2>
             <form action="/api/tweets" method="POST">
                 <label>Title</label>
@@ -13,7 +14,7 @@ const New = () => {
                 <textarea name="body" required></textarea>
                 <input type="submit" value="post tweet"/>
             </form>
-        </div>
+        </DefaultLayout>
     )
 }
 
